@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoundScribe – Privacy Policy</title>
+  <title>SoundScribe · 聽得明 — AI 語音辨認</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -13,30 +13,57 @@
       line-height: 1.7;
     }
     header {
-      background: #000;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
       color: #fff;
-      padding: 40px 24px;
+      padding: 60px 24px 48px;
       text-align: center;
     }
-    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
-    header p { margin-top: 8px; color: #aaa; font-size: 0.95rem; }
-    main {
-      max-width: 760px;
-      margin: 48px auto;
-      padding: 0 24px 80px;
+    header h1 { font-size: 2.4rem; font-weight: 700; letter-spacing: -0.5px; }
+    header .subtitle { margin-top: 8px; color: #aaa; font-size: 1rem; }
+    header .tagline {
+      margin-top: 16px;
+      font-size: 1.1rem;
+      color: #93c5fd;
+      font-weight: 500;
     }
-    section { margin-bottom: 40px; }
+    .screenshots {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      padding: 40px 24px;
+      background: #fff;
+      flex-wrap: wrap;
+    }
+    .screenshots img {
+      width: 100%;
+      max-width: 560px;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    section { margin-bottom: 48px; }
     h2 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 12px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 14px;
       color: #1d1d1f;
-      border-bottom: 1px solid #d2d2d7;
+      border-bottom: 2px solid #0066cc;
       padding-bottom: 8px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 16px 0 8px;
+      color: #1d1d1f;
     }
     p { margin-bottom: 12px; color: #3d3d3f; }
     ul { padding-left: 20px; margin-bottom: 12px; color: #3d3d3f; }
     li { margin-bottom: 6px; }
+    .lang-en { color: #555; font-size: 0.95em; font-style: italic; margin-bottom: 16px; }
     .badge {
       display: inline-block;
       background: #e8f5e9;
@@ -45,98 +72,308 @@
       padding: 4px 14px;
       font-size: 0.85rem;
       font-weight: 600;
-      margin-bottom: 16px;
+      margin: 4px 4px 4px 0;
     }
+    .badge.blue {
+      background: #e3f2fd;
+      color: #1565c0;
+    }
+    .badge.purple {
+      background: #f3e5f5;
+      color: #6a1b9a;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .feature-card .icon { font-size: 2rem; margin-bottom: 10px; }
+    .feature-card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 6px; }
+    .feature-card p { font-size: 0.9rem; margin: 0; }
+    .perf-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .perf-table th {
+      background: #0066cc;
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    .perf-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.9rem;
+    }
+    .perf-table tr:last-child td { border-bottom: none; }
+    .perf-table .highlight { color: #0066cc; font-weight: 700; }
+    .ack-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .ack-card .ack-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .ack-card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+    .ack-card p { font-size: 0.9rem; margin: 0; }
     footer {
       text-align: center;
       padding: 32px;
       color: #888;
       font-size: 0.85rem;
       border-top: 1px solid #d2d2d7;
+      background: #fff;
     }
     a { color: #0066cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .divider {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 20px 0;
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>SoundScribe · 聽得明</h1>
-  <p>Privacy Policy · 隱私政策</p>
+  <p class="subtitle">語音辨認 · AI Transcription for Mac</p>
+  <p class="tagline">全程本機運算 · 音訊絕不離開您的 Mac</p>
+  <p class="tagline" style="color:#86efac; margin-top:8px;">All processing on-device · Your audio never leaves your Mac</p>
 </header>
+
+<div class="screenshots">
+  <img src="screenshot1.png" alt="SoundScribe main screen">
+  <img src="screenshot2.png" alt="SoundScribe transcribing">
+</div>
 
 <main>
 
-  <div style="text-align:center; margin-bottom: 32px;">
-    <span class="badge">✓ No data collected · 不收集任何資料</span>
-  </div>
-
+  <!-- APP INTRO -->
   <section>
-    <h2>Overview · 概覽</h2>
-    <p>SoundScribe (聽得明 – 語音辨認) is a macOS app that transcribes audio files and live dictation entirely on your device using on-device AI models. Your audio and transcripts never leave your Mac unless you explicitly choose to use an optional third-party AI service.</p>
-    <p>SoundScribe（聽得明）是一款 macOS 語音轉文字應用程式，使用本機 AI 模型在您的裝置上處理所有音訊。除非您主動選擇使用第三方 AI 服務，否則您的音訊和轉錄內容不會離開您的 Mac。</p>
+    <h2>關於 SoundScribe · About</h2>
+    <p>SoundScribe（聽得明）係一款專為 Apple Silicon Mac 打造的語音轉文字應用程式。採用業界最頂尖的 Qwen3-ASR 模型，支援 52 種語言及方言（包括粵語、普通話、英語、日語等），全程於本機完成推理，音訊與轉錄內容絕不上傳至任何伺服器。</p>
+    <p class="lang-en">SoundScribe is a macOS speech-to-text app built exclusively for Apple Silicon. Powered by the state-of-the-art Qwen3-ASR model, it supports 52 languages and dialects — including Cantonese, Mandarin, English, and Japanese — with all inference running entirely on-device. Your audio never leaves your Mac.</p>
+
+    <div style="margin-top:16px;">
+      <span class="badge">✓ 本機推理</span>
+      <span class="badge">✓ 52 種語言</span>
+      <span class="badge blue">⚡ Apple Silicon</span>
+      <span class="badge blue">🎙 即時聽寫</span>
+      <span class="badge purple">🤖 Qwen3-ASR</span>
+    </div>
   </section>
 
+  <!-- FEATURES -->
   <section>
-    <h2>Data We Do NOT Collect · 不收集的資料</h2>
+    <h2>核心功能 · Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">🎙</div>
+        <h4>即時聽寫 Live Dictation</h4>
+        <p>即時麥克風語音轉文字，邊講邊顯示結果。Real-time microphone transcription.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📁</div>
+        <h4>批次處理 Batch Queue</h4>
+        <p>拖放多個音訊／視訊檔案，批次排隊轉錄。Drag & drop files for batch transcription.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🌏</div>
+        <h4>52 種語言</h4>
+        <p>粵語、普通話、英語、日語、韓語及 48 種其他語言與方言。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">✨</div>
+        <h4>AI 後處理</h4>
+        <p>可選接駁 Gemini／OpenAI／Anthropic 進行文字優化，自備 API Key。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📝</div>
+        <h4>字幕輸出</h4>
+        <p>支援 SRT／VTT／JSON 字幕格式輸出，方便剪片使用。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔒</div>
+        <h4>完全離線</h4>
+        <p>模型本機推理，無需網路連線，保護您的隱私。Full offline support after model download.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFORMANCE -->
+  <section>
+    <h2>卓越性能 · Benchmark Performance</h2>
+    <p>SoundScribe 採用 <strong>Qwen3-ASR</strong>，由阿里巴巴 QwenLM 團隊開發。根據公開基準測試，Qwen3-ASR 在多個中文語音辨認任務上達到業界領先水準，於 AISHELL、WenetSpeech、MagicData 等標準評測集表現優秀。</p>
+    <p class="lang-en">SoundScribe is powered by <strong>Qwen3-ASR</strong>, developed by Alibaba's QwenLM team. According to published benchmarks, Qwen3-ASR achieves industry-leading performance on major Chinese ASR tasks, excelling on AISHELL, WenetSpeech, and MagicData evaluation sets.</p>
+
+    <table class="perf-table">
+      <tr>
+        <th>評測集 / Benchmark</th>
+        <th>語言</th>
+        <th>Qwen3-ASR 1.7B</th>
+      </tr>
+      <tr>
+        <td>AISHELL-1</td>
+        <td>普通話</td>
+        <td class="highlight">業界領先 ★</td>
+      </tr>
+      <tr>
+        <td>WenetSpeech (test_net)</td>
+        <td>普通話</td>
+        <td class="highlight">業界領先 ★</td>
+      </tr>
+      <tr>
+        <td>MagicData</td>
+        <td>普通話</td>
+        <td class="highlight">業界領先 ★</td>
+      </tr>
+      <tr>
+        <td>多語言 (52 langs)</td>
+        <td>多語言</td>
+        <td class="highlight">超越 Whisper Large ★</td>
+      </tr>
+    </table>
+    <p style="font-size:0.85rem; color:#888;">★ 數據來源：QwenLM 官方技術報告及 Hugging Face 公開評測。實際效果因錄音環境而異。<br>
+    ★ Source: QwenLM official technical report and Hugging Face public evaluations. Results may vary by recording conditions.</p>
+  </section>
+
+  <!-- ACKNOWLEDGMENTS -->
+  <section>
+    <h2>開源致謝 · Open Source Acknowledgments</h2>
+    <p>SoundScribe 建立於眾多出色的開源項目之上，衷心感謝以下開發者及組織的無私貢獻：</p>
+    <p class="lang-en">SoundScribe is built on the shoulders of outstanding open-source projects. We are deeply grateful to the following developers and organizations:</p>
+
+    <div class="ack-card">
+      <div class="ack-icon">🤖</div>
+      <div>
+        <h4>QwenLM / Alibaba Cloud — Qwen3-ASR</h4>
+        <p>提供業界頂尖的語音辨認模型，支援 52 種語言，在多項中文 ASR 基準測試中達到業界領先水準。感謝 QwenLM 團隊的開源精神，令高品質語音辨認技術得以普及。</p>
+        <p class="lang-en">State-of-the-art ASR model supporting 52 languages, achieving top scores on major Chinese ASR benchmarks. Thank you to the QwenLM team for open-sourcing this remarkable technology.</p>
+        <p style="margin-top:6px;"><a href="https://github.com/QwenLM/Qwen3-ASR" target="_blank">github.com/QwenLM/Qwen3-ASR</a> · Apache 2.0</p>
+      </div>
+    </div>
+
+    <div class="ack-card">
+      <div class="ack-icon">⚡</div>
+      <div>
+        <h4>ivan-digital — qwen3-asr-swift</h4>
+        <p>將 Qwen3-ASR 模型移植到 Apple MLX Swift，令模型能在 Apple Silicon 上高效本機運行。感謝作者的出色移植工作，使 macOS native 推理成為可能。</p>
+        <p class="lang-en">Swift port of Qwen3-ASR for Apple MLX, enabling efficient on-device inference on Apple Silicon. Thank you for making native macOS inference a reality.</p>
+        <p style="margin-top:6px;"><a href="https://github.com/ivan-digital/qwen3-asr-swift" target="_blank">github.com/ivan-digital/qwen3-asr-swift</a> · Apache 2.0</p>
+      </div>
+    </div>
+
+    <div class="ack-card">
+      <div class="ack-icon">🍎</div>
+      <div>
+        <h4>Apple — MLX Swift / MLX</h4>
+        <p>Apple 開發的 MLX 機器學習框架，針對 Apple Silicon 的統一記憶體架構深度優化，令 AI 模型在 Mac 上達到卓越的推理速度與效能。</p>
+        <p class="lang-en">Apple's MLX machine learning framework, deeply optimized for Apple Silicon's unified memory architecture, enabling outstanding AI inference speed and efficiency on Mac.</p>
+        <p style="margin-top:6px;"><a href="https://github.com/ml-explore/mlx-swift" target="_blank">github.com/ml-explore/mlx-swift</a> · MIT</p>
+      </div>
+    </div>
+
+    <div class="ack-card">
+      <div class="ack-icon">🤗</div>
+      <div>
+        <h4>Hugging Face — swift-transformers</h4>
+        <p>提供 Swift 版本的 Transformers 庫及 Tokenizer，支援 Qwen3-ASR 的 BPE tokenization。感謝 Hugging Face 建立開放的 AI 生態系統。</p>
+        <p class="lang-en">Swift Transformers library and tokenizer support for Qwen3-ASR's BPE tokenization. Thank you to Hugging Face for building an open AI ecosystem.</p>
+        <p style="margin-top:6px;"><a href="https://github.com/huggingface/swift-transformers" target="_blank">github.com/huggingface/swift-transformers</a> · Apache 2.0</p>
+      </div>
+    </div>
+
+    <div class="ack-card">
+      <div class="ack-icon">📦</div>
+      <div>
+        <h4>其他開源依賴 · Other Dependencies</h4>
+        <ul style="margin-top:8px;">
+          <li><strong>swift-jinja</strong> (John Burwood) — Jinja2 模板引擎的 Swift 實現 · MIT</li>
+          <li><strong>yyjson</strong> (ibireme) — 超高速 JSON 解析庫 · MIT</li>
+          <li><strong>mlx-community</strong> — 提供量化模型 (Qwen3-ASR-1.7B-8bit, 0.6B-4bit) · Apache 2.0</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- PRIVACY POLICY -->
+  <section>
+    <h2>隱私政策 · Privacy Policy</h2>
+
+    <div style="text-align:center; margin-bottom: 24px;">
+      <span class="badge">✓ 不收集任何資料 · No data collected</span>
+    </div>
+
+    <h3>概覽 · Overview</h3>
+    <p>SoundScribe 使用本機 AI 模型在您的裝置上處理所有音訊。除非您主動選擇使用第三方 AI 服務，否則您的音訊和轉錄內容不會離開您的 Mac。</p>
+    <p class="lang-en">SoundScribe processes all audio on your device using on-device AI models. Your audio and transcripts never leave your Mac unless you explicitly choose to use an optional third-party AI service.</p>
+
+    <h3>不收集的資料 · Data We Do NOT Collect</h3>
     <ul>
-      <li>We do not collect, store, or transmit your audio recordings.</li>
-      <li>We do not collect transcription results or text content.</li>
-      <li>We do not use analytics, crash reporting, or tracking SDKs.</li>
-      <li>We do not collect personal information such as name, email, or location.</li>
-      <li>We do not use advertising identifiers or fingerprinting.</li>
+      <li>不收集、儲存或傳輸您的錄音 · We do not collect, store, or transmit your audio recordings.</li>
+      <li>不收集轉錄結果或文字內容 · We do not collect transcription results or text content.</li>
+      <li>不使用分析、崩潰回報或追蹤 SDK · We do not use analytics, crash reporting, or tracking SDKs.</li>
+      <li>不收集個人資料（姓名、電郵、位置）· We do not collect personal information.</li>
+      <li>不使用廣告識別碼或指紋識別 · We do not use advertising identifiers or fingerprinting.</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Microphone Access · 麥克風存取</h2>
-    <p>SoundScribe requests microphone permission solely to enable the Live Dictation feature. Audio captured from the microphone is processed locally on your device in real time and is never saved or transmitted without your action.</p>
-  </section>
+    <h3>麥克風存取 · Microphone Access</h3>
+    <p>SoundScribe 僅為即時聽寫功能申請麥克風權限。麥克風擷取的音訊在裝置上即時本機處理，未經您的操作不會儲存或傳輸。</p>
+    <p class="lang-en">SoundScribe requests microphone permission solely to enable the Live Dictation feature. Audio is processed locally in real time and is never saved or transmitted without your action.</p>
 
-  <section>
-    <h2>File Access · 檔案存取</h2>
-    <p>SoundScribe accesses audio and video files that you explicitly select or drag into the app. Output transcription text files are saved to the location you choose. The app uses macOS Security-Scoped Bookmarks to maintain access to your chosen folders across sessions; these bookmarks are stored locally in the app sandbox and are never transmitted.</p>
-  </section>
+    <h3>檔案存取 · File Access</h3>
+    <p>SoundScribe 只存取您明確選擇或拖入 App 的音訊與視訊檔案。App 使用 macOS 安全範疇書籤在 Sandbox 內本機維護您選擇的資料夾存取權，絕不傳輸。</p>
+    <p class="lang-en">SoundScribe accesses only audio and video files you explicitly select or drag into the app. macOS Security-Scoped Bookmarks are stored locally in the app sandbox and are never transmitted.</p>
 
-  <section>
-    <h2>Optional AI Services · 可選的 AI 服務</h2>
-    <p>SoundScribe optionally integrates with third-party AI services (Google Gemini, OpenAI, Anthropic) for post-processing transcription text. These features are:</p>
+    <h3>可選 AI 服務 · Optional AI Services</h3>
+    <p>SoundScribe 可選擇性接駁 Google Gemini、OpenAI、Anthropic 進行轉錄後處理：</p>
     <ul>
-      <li><strong>Off by default</strong> — you must explicitly enable them in Settings.</li>
-      <li><strong>Bring Your Own Key</strong> — you supply your own API key; the app does not provide or proxy any API access.</li>
-      <li><strong>Text only</strong> — only the transcribed text (not audio) is sent to the AI service.</li>
+      <li><strong>預設關閉</strong> — 必須在設定中明確啟用 · Off by default</li>
+      <li><strong>自備 API Key</strong> — App 不提供或代理任何 API 存取 · Bring Your Own Key</li>
+      <li><strong>僅傳輸文字</strong> — 只有轉錄文字（非音訊）傳送至 AI 服務 · Text only, no audio</li>
     </ul>
-    <p>When you use these features, your transcription text is sent directly to the respective provider under their own privacy policies:</p>
-    <ul>
-      <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-      <li><a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI Privacy Policy</a></li>
-      <li><a href="https://www.anthropic.com/legal/privacy" target="_blank">Anthropic Privacy Policy</a></li>
-    </ul>
-  </section>
+    <p>相關第三方隱私政策：
+      <a href="https://policies.google.com/privacy" target="_blank">Google</a> ·
+      <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI</a> ·
+      <a href="https://www.anthropic.com/legal/privacy" target="_blank">Anthropic</a>
+    </p>
 
-  <section>
-    <h2>API Keys · API 金鑰</h2>
-    <p>Any API keys you enter are stored exclusively in the macOS Keychain on your device with <code>WhenUnlockedThisDeviceOnly</code> accessibility. They are never transmitted to our servers (we have none) and are never included in crash reports or logs.</p>
-  </section>
+    <h3>API 金鑰 · API Keys</h3>
+    <p>您輸入的 API 金鑰僅以 <code>WhenUnlockedThisDeviceOnly</code> 存取層級儲存於 macOS Keychain，不會傳輸至任何伺服器，亦不包含於任何記錄或崩潰報告中。</p>
+    <p class="lang-en">API keys are stored exclusively in the macOS Keychain with <code>WhenUnlockedThisDeviceOnly</code> accessibility. They are never transmitted and never included in logs or crash reports.</p>
 
-  <section>
-    <h2>On-Device AI Models · 本機 AI 模型</h2>
-    <p>Speech recognition models are downloaded from Hugging Face Hub and cached locally on your device at <code>~/Library/Caches/</code>. No audio or text is sent to Hugging Face during transcription — the models run entirely on-device using Apple Silicon.</p>
-  </section>
+    <h3>本機 AI 模型 · On-Device AI Models</h3>
+    <p>語音辨認模型從 Hugging Face Hub 下載後快取於 <code>~/Library/Caches/</code>，轉錄過程中不向 Hugging Face 傳送任何音訊或文字，模型完全於 Apple Silicon 上本機運行。</p>
+    <p class="lang-en">Models are downloaded from Hugging Face Hub and cached at <code>~/Library/Caches/</code>. No audio or text is sent to Hugging Face during transcription — models run entirely on-device.</p>
 
-  <section>
-    <h2>Children's Privacy · 兒童隱私</h2>
-    <p>SoundScribe does not knowingly collect any information from children under the age of 13. The app does not collect any personal data from any user regardless of age.</p>
-  </section>
+    <h3>兒童隱私 · Children's Privacy</h3>
+    <p>SoundScribe 不刻意收集 13 歲以下兒童的任何資料。本 App 不收集任何用戶的個人資料，不論年齡。</p>
 
-  <section>
-    <h2>Changes to This Policy · 政策更新</h2>
-    <p>If we make material changes to this privacy policy, we will update the "Last Updated" date below. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
-  </section>
+    <h3>政策更新 · Changes to This Policy</h3>
+    <p>若本隱私政策有重大變更，將更新下方的「最後更新」日期。繼續使用本 App 即代表接受修訂後的政策。</p>
 
-  <section>
-    <h2>Contact · 聯絡</h2>
-    <p>If you have any questions about this privacy policy, please contact us at: <a href="mailto:savouringofdestiny@gmail.com">savouringofdestiny@gmail.com</a></p>
+    <h3>聯絡 · Contact</h3>
+    <p>如對本隱私政策有任何疑問，請聯絡：<a href="mailto:savouringofdestiny@gmail.com">savouringofdestiny@gmail.com</a></p>
   </section>
 
 </main>

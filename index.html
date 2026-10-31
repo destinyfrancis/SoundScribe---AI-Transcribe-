@@ -37,6 +37,7 @@
     .screenshots img {
       width: 100%;
       max-width: 560px;
+      flex: 1 1 380px;
       border-radius: 12px;
       box-shadow: 0 8px 32px rgba(0,0,0,0.12);
     }
@@ -160,8 +161,10 @@
 </header>
 
 <div class="screenshots">
-  <img src="screenshot1.png" alt="SoundScribe main screen">
-  <img src="screenshot2.png" alt="SoundScribe transcribing">
+  <img src="01_workbench.png" alt="SoundScribe 工作台 Workbench">
+  <img src="02_subtitles.png" alt="SoundScribe 字幕 Subtitles">
+  <img src="03_edit.png" alt="SoundScribe 編輯 Edit">
+  <img src="05_export.png" alt="SoundScribe 匯出 Export">
 </div>
 
 <main>
@@ -181,10 +184,28 @@
     </div>
   </section>
 
+  <!-- WHATS NEW -->
+  <section>
+    <h2>2.5.0 新功能 · What's New</h2>
+    <ul>
+      <li><strong>全新工作台</strong>：左邊逐字稿列表、中間逐字稿與字幕、右邊檢查器（下一步、設定、匯出）。拖入檔案即可開始。<br><span class="lang-en">New three-pane workbench: transcript list, transcript and subtitles, and an inspector. Drop a file in to start.</span></li>
+      <li><strong>五階段進度</strong>：讀取音訊、轉錄、字幕對齊、說話者、可匯出，清楚顯示百分比、剩餘時間；失敗時說明原因並可重試。<br><span class="lang-en">Five-stage progress with percentage and time left; failures show the reason and can be retried.</span></li>
+      <li><strong>逐字稿更易讀</strong>：按停頓和說話者自動分段並標示時間，可切換「逐字稿／字幕／編輯」。<br><span class="lang-en">Paragraphs split at pauses and speaker changes, time-stamped; switch between Transcript, Subtitles and Edit.</span></li>
+      <li><strong>字幕時間更準確</strong>：修正段落開頭字幕偏早或被拉長；長片後段不再漂移，由頭到尾與影片同步。<br><span class="lang-en">More accurate subtitle timing, and no more drift on long videos.</span></li>
+      <li><strong>結果一致、更穩定</strong>：同一檔案每次得到相同文字，並修正長時間轉錄途中意外結束的問題。<br><span class="lang-en">Consistent results, and more stable on long transcriptions.</span></li>
+      <li><strong>設定更簡潔</strong>：七個分頁精簡為四個（一般、模型、輸出與字幕、AI 與私隱），新增「完成時通知」。<br><span class="lang-en">Settings simplified from seven tabs to four, with a new "Notify when finished" option.</span></li>
+    </ul>
+  </section>
+
   <!-- FEATURES -->
   <section>
     <h2>核心功能 · Key Features</h2>
     <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">🧭</div>
+        <h4>三欄工作台 Workbench</h4>
+        <p>逐字稿列表、內容與檢查器一目了然，五階段進度清楚顯示。Three-pane workbench with clear progress.</p>
+      </div>
       <div class="feature-card">
         <div class="icon">🎙</div>
         <h4>即時聽寫 Live Dictation</h4>
@@ -207,8 +228,8 @@
       </div>
       <div class="feature-card">
         <div class="icon">📝</div>
-        <h4>字幕輸出</h4>
-        <p>支援 SRT／VTT／JSON 字幕格式輸出，方便剪片使用。</p>
+        <h4>字幕輸出 Subtitles</h4>
+        <p>支援 SRT／VTT／JSON 輸出，內置 Subtitle Studio 預覽波形、調整字幕文字與時間。Subtitle Studio for reviewing and retiming cues.</p>
       </div>
       <div class="feature-card">
         <div class="icon">🔒</div>
@@ -380,7 +401,7 @@
 
 <footer>
   <p>SoundScribe · 聽得明 — Copyright © 2026 Francis Tam. All rights reserved.</p>
-  <p style="margin-top: 8px;">Last Updated: March 2026</p>
+  <p style="margin-top: 8px;">Last Updated: October 2026 · SoundScribe 2.5.0</p>
 </footer>
 
 </body>
